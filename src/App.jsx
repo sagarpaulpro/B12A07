@@ -2,6 +2,7 @@ import './App.css'
 import { Suspense, use } from 'react';
 import Navbar from './components/Navbar'
 import Card from './components/card';
+import DarkFooter from './components/footer'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           {ticketesData.map(ticket => <Card key={ticket?.id} ticket={ticket}></Card>)}
         </div>
       </Suspense>
+      <DarkFooter></DarkFooter>
     </>
   )
 }
